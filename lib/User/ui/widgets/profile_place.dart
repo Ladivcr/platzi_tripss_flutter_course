@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'place.dart';
+import '../../../Place/model/place.dart';
 import 'profile_place_info.dart';
-import 'profile_place.dart';
 
 class ProfilePlace extends StatelessWidget {
 

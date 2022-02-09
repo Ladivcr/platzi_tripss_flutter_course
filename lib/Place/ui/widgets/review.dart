@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'rating.dart';
+import '../../../rating.dart';
 
 class Review extends StatelessWidget {
   String pathImage = "assets/HomeBlog.jpg";
   String name = "Varuna Cardo";
   String details = "1 review 5 photos";
-  String comment = "There is an amazing place";
+  String comment = "There is an amazing Place";
   double stars = 3.5;
 
   Review(this.pathImage, this.name, this.details, this.comment);
