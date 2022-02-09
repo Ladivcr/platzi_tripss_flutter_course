@@ -43,15 +43,15 @@ class _PlatziTrips extends State<PlatziTrips>{
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.add),
-                title: Text("Upload"),
+                label: "Upload",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text("Home"),
+                label: "Home",
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.search),
-                title: Text("Search"),
+                label: "Search",
               ),
 
             ],
