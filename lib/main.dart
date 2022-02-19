@@ -5,10 +5,17 @@ import 'platzi_trips.dart';
 import 'platzi_trips_cupertino.dart';
 import 'package:platzi_tripss_app/User/bloc/bloc_user.dart';
 import 'package:platzi_tripss_app/User/ui/screens/sign_in_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
+/*
 void main() {
   runApp(const MyApp());
-}
+}*/
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
