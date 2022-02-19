@@ -1,13 +1,26 @@
 import 'package:flutter/material.dart';
-
-class ProfileTrips extends StatelessWidget{
+import 'package:platzi_tripss_app/User/ui/screens/profile_header.dart';
+import 'package:platzi_tripss_app/User/ui/widgets/profile_places_list.dart';
+import 'package:platzi_tripss_app/User/ui/widgets/profile_background.dart';
+class ProfileTrips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(
+    /*return Container(
       color: Colors.indigo,
+    );*/
+    return Stack(
+      children: <Widget>[
+        ProfileBackground(),
+        ListView(
+          children: <Widget>[
+            ProfileHeader(),
+            ProfilePlacesList()
+
+          ],
+        ),
+      ],
     );
   }
-
 
 }
